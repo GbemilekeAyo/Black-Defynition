@@ -43,7 +43,7 @@ function App() {
           {/* Contest routes */}
           <Route path="categories" element={<CategoriesPage />} />
           <Route path="categories/:categoryId" element={<ContestListPage />} />
-          <Route path="categories/:categoryId/contestants" exact component={ContestDetailsPage} />         
+          <Route path="categories/:categoryId/contestants" element={<ContestDetailsPage />} />         
 
           {/* Contestant dashboard route */}
           <Route path="contestant/dashboard" element={<ContestantDashboardPage />} />
