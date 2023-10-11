@@ -1,8 +1,5 @@
-// tailwind.config.js
-content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
 module.exports = {
-  purge: [],
-  darkMode: false, 
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"], 
   theme: {
     extend: {
       fontFamily: {
@@ -47,7 +44,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['odd', 'even'],
+    },
   },
   plugins: [],
 }

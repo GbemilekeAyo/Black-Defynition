@@ -7,66 +7,34 @@
   <title>Pageant Voting System</title>
 
   <!-- Include Tailwind CSS styles -->
-  <link href="/src/styles.css" rel="stylesheet">
+  <link href="/src/index.css" rel="stylesheet">
 
+  <!-- Add custom CSS for the layout -->
   <style>
-    /* Gradient background */
+    /* Customize your layout styles here */
     body {
-      background: linear-gradient(135deg, #ff7a18, #ff0062);
       font-family: 'Poppins', sans-serif;
+      background-color: #121212;
       color: #fff;
     }
-
-    /* Header styles */
-    .header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .nav {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-
-    .nav a:hover {
-      color: #ff7a18;
-    }
-    
-    /* Main content container */
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 1rem;
     }
+    /* Add more custom styles as needed */
+
+    /* You can add custom styles specific to your application */
   </style>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">Pageant Voting</div>
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/category">Category</a>
-      <a href="/contestants">Contestants</a>
-      <a href="/results">Results</a>
-    </nav>
-  </div>
-  <div class="container" id="root"></div>
+  <div id="root"></div>
+  <!-- Include your JavaScript bundle (main.jsx) to initialize your React application -->
   <script type="module" src="/src/main.jsx"></script>
+
+  <!-- You can include additional JavaScript files for specific functionality -->
+
+  <!-- Include additional CSS or CSS frameworks as needed -->
 </body>
 </html>
 
