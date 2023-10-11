@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 
 // Import your custom pages
 import Home from './pages/Home';
@@ -27,30 +27,30 @@ function App() {
   return (
     <Router>
       <div className="bg-gray-100 min-h-screen">
-        <Switch>
+        <Routes>
           {/* Public routes */}
           <Route path="/" exact component={Home} />
-          <Route path="/about-us" exact component={AboutUs} />
+          <Route path="about-us" exact component={AboutUs} />
 
           {/* Auth routes */}
-          <Route path="/auth/signup/admin" exact component={SignUpAdminPage} />
-          <Route path="/auth/login/admin" exact component={LoginAdminPage} />
-          <Route path="/auth/signup/voter" exact component={SignUpVoterPage} />
-          <Route path="/auth/login/voter" exact component={LoginVoterPage} />
-          <Route path="/auth/signup/contestant" exact component={SignUpContestantPage} />
-          <Route path="/auth/login/contestant" exact component={LoginContestantPage} />
+          <Route path="auth/signup/admin" exact component={SignUpAdminPage} />
+          <Route path="auth/login/admin" exact component={LoginAdminPage} />
+          <Route path="auth/signup/voter" exact component={SignUpVoterPage} />
+          <Route path="auth/login/voter" exact component={LoginVoterPage} />
+          <Route path="auth/signup/contestant" exact component={SignUpContestantPage} />
+          <Route path="auth/login/contestant" exact component={LoginContestantPage} />
 
           {/* Contest routes */}
-          <Route path="/categories" exact component={CategoriesPage} />
-          <Route path="/categories/:categoryId" exact component={ContestListPage} />
-          <Route path="/categories/:categoryId/contestants" exact component={ContestDetailsPage} />
+          <Route path="categories" exact component={CategoriesPage} />
+          <Route path="categories/:categoryId" exact component={ContestListPage} />
+          <Route path="categories/:categoryId/contestants" exact component={ContestDetailsPage} />
 
           {/* Contestant dashboard route */}
-          <Route path="/contestant/dashboard" exact component={ContestantDashboardPage} />
+          <Route path="contestant/dashboard" exact component={ContestantDashboardPage} />
 
           {/* Admin dashboard route */}
-          <Route path="/admin/dashboard" exact component={AdminDashboardPage} />
-        </Switch>
+          <Route path="admin/dashboard" exact component={AdminDashboardPage} />
+        </Routes>
       </div>
     </Router>
   );
