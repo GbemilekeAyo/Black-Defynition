@@ -9,7 +9,7 @@ function Home() {
         <p className="text-lg">
           Cast your vote for your favorite contestants in various categories.
         </p>
-        <p className="text-lg mt-4">Sign up and get started now!</p>
+        <p className="text-lg mt-4">Sign up and get started now! Gbemi is incharge</p>
       </div>
     </DefaultLayout>
   );
